@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Image Classifier with Teachable Machine • AI Kids Lab</title>
+<meta name="description" content="Step-by-step guide to train an image classifier with Teachable Machine for kids 8–12." />
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css" />
+<script defer src="/assets/js/main.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/"><span class="logo">🤖</span><span>AI Kids Lab</span></a>
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/">Home</a>
+    <a href="/tutorials/">Tutorials</a>
+    <a href="/skills/">AI Skills</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="section tutorial">
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <a href="/">Home</a> <span aria-hidden="true">›</span>
+    <a href="/tutorials/">Tutorials</a> <span aria-hidden="true">›</span>
+    <span>Image Classifier with Teachable Machine</span>
+  </nav>
+  <h1>Image Classifier with Teachable Machine</h1>
+  <p class="lead">Train a model in your browser to tell apart two things (like <em>rock</em> vs <em>leaf</em>) using your webcam — no coding required.</p>
+
+  <aside class="callout info">
+    <strong>What you’ll need:</strong> A laptop with a webcam and an internet connection.
+  </aside>
+
+  <section>
+    <h2>Step 1 — Collect Examples</h2>
+    <ol class="steps detailed">
+      <li>Open <a href="https://teachablemachine.withgoogle.com/train" target="_blank" rel="noopener">Teachable Machine</a>.</li>
+      <li>Choose <strong>Image Project → Standard Image Model</strong>.</li>
+      <li>Rename Class 1 to <strong>Rock</strong> and Class 2 to <strong>Leaf</strong>.</li>
+      <li>Use the <strong>Webcam</strong> button to record 30–50 images for each class.</li>
+    </ol>
+    <figure>
+      <img src="/assets/img/placeholder-16x9.svg" alt="Teachable Machine interface showing two classes" />
+      <figcaption>Collecting examples with the webcam.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Step 2 — Train &amp; Test</h2>
+    <ol class="steps detailed">
+      <li>Click <strong>Train Model</strong>. Wait for training to finish.</li>
+      <li>Try the <strong>Preview</strong>. Hold up a rock or leaf — what does it predict?</li>
+      <li>If it’s wrong, add more examples and retrain.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Step 3 — Export</h2>
+    <ol class="steps detailed">
+      <li>Click <strong>Export Model</strong> and choose <strong>TensorFlow.js</strong>.</li>
+      <li>Download the files. You can use them in a simple web page later.</li>
+    </ol>
+    <aside class="callout tip"><strong>Tip:</strong> Try adding a third class, like <em>nothing</em>, to reduce false positives.</aside>
+  </section>
+
+  <section class="safety">
+    <h2>Safety &amp; Privacy</h2>
+    <p>Ask an adult before using the webcam. Don’t upload personal photos. Keep your model files private.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="brand-inline"><span class="logo">🤖</span><strong>AI Kids Lab</strong></div>
+      <p>Fun, safe, step-by-step AI projects for ages 8–12.</p>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="/tutorials/">All Tutorials</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Stay Updated</h4>
+      <form class="newsletter" action="#" method="post" onsubmit="return false" aria-describedby="nl-help">
+        <label class="sr-only" for="nl-email">Email</label>
+        <input id="nl-email" type="email" placeholder="Your email (demo)" required />
+        <button type="submit">Subscribe</button>
+        <small id="nl-help">Demo form only. Replace with your provider.</small>
+      </form>
+    </div>
+  </div>
+  <p class="copyright">© <span id="year"></span> AI Kids Lab. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

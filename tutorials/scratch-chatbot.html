@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Build a Chatbot in Scratch • AI Kids Lab</title>
+<meta name="description" content="Make a friendly chatbot in Scratch using simple blocks — kid-friendly tutorial." />
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css" />
+<script defer src="/assets/js/main.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/"><span class="logo">🤖</span><span>AI Kids Lab</span></a>
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/">Home</a>
+    <a href="/tutorials/">Tutorials</a>
+    <a href="/skills/">AI Skills</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="section tutorial">
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <a href="/">Home</a> <span aria-hidden="true">›</span>
+    <a href="/tutorials/">Tutorials</a> <span aria-hidden="true">›</span>
+    <span>Build a Chatbot in Scratch</span>
+  </nav>
+  <h1>Build a Chatbot in Scratch</h1>
+  <p class="lead">Use <a href="https://scratch.mit.edu/" target="_blank" rel="noopener">Scratch</a> blocks to make a helper that can introduce itself and answer simple questions.</p>
+
+  <section>
+    <h2>Step 1 — Create the Sprite</h2>
+    <ol class="steps detailed">
+      <li>Start a new Scratch project. Delete the cat if you want.</li>
+      <li>Choose a new sprite and background.</li>
+      <li>Add a <em>when green flag clicked</em> block and say “Hi, I’m Chat-Bot!”</li>
+    </ol>
+    <figure>
+      <img src="/assets/img/placeholder-16x9.svg" alt="Scratch blocks for a simple chatbot" />
+      <figcaption>Basic blocks to greet the user.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Step 2 — Ask &amp; Answer</h2>
+    <ol class="steps detailed">
+      <li>Use <em>ask [What’s your name?] and wait</em>.</li>
+      <li>Then <em>say [Nice to meet you, (answer)!]</em> for 2 seconds.</li>
+      <li>Add <em>if</em> blocks to answer questions like “time” or “joke”.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Step 3 — Share</h2>
+    <ol class="steps detailed">
+      <li>Test your bot and fix any mistakes.</li>
+      <li>Click <strong>Share</strong> to publish. Copy the link to show friends.</li>
+    </ol>
+    <aside class="callout tip"><strong>Tip:</strong> Keep answers kind and safe.</aside>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="brand-inline"><span class="logo">🤖</span><strong>AI Kids Lab</strong></div>
+      <p>Fun, safe, step-by-step AI projects for ages 8–12.</p>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="/tutorials/">All Tutorials</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Stay Updated</h4>
+      <form class="newsletter" action="#" method="post" onsubmit="return false" aria-describedby="nl-help">
+        <label class="sr-only" for="nl-email">Email</label>
+        <input id="nl-email" type="email" placeholder="Your email (demo)" required />
+        <button type="submit">Subscribe</button>
+        <small id="nl-help">Demo form only. Replace with your provider.</small>
+      </form>
+    </div>
+  </div>
+  <p class="copyright">© <span id="year"></span> AI Kids Lab. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

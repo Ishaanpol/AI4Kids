@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Doodle Recognizer in Python • AI Kids Lab</title>
+<meta name="description" content="Advanced tutorial: build a tiny neural net to recognize doodles." />
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css" />
+<script defer src="/assets/js/main.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/"><span class="logo">🤖</span><span>AI Kids Lab</span></a>
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/">Home</a>
+    <a href="/tutorials/">Tutorials</a>
+    <a href="/skills/">AI Skills</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="section tutorial">
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <a href="/">Home</a> <span aria-hidden="true">›</span>
+    <a href="/tutorials/">Tutorials</a> <span aria-hidden="true">›</span>
+    <span>Doodle Recognizer in Python</span>
+  </nav>
+  <h1>Doodle Recognizer in Python</h1>
+  <p class="lead">Draw a picture and let a small neural net guess it. Great intro to training and testing!</p>
+
+  <aside class="callout warn"><strong>Advanced:</strong> This project uses Python and a few libraries. An adult may need to help.</aside>
+
+  <section>
+    <h2>Step 1 — Setup</h2>
+    <ol class="steps detailed">
+      <li>Install Python 3.10+.</li>
+      <li>Open a terminal and run: <code>pip install numpy pillow tensorflow</code></li>
+      <li>Download the starter code (coming soon) and run it.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Step 2 — Train</h2>
+    <p>We’ll load doodle images, train for a few epochs, and evaluate accuracy.</p>
+    <figure>
+      <img src="/assets/img/placeholder-16x9.svg" alt="Training chart placeholder" />
+      <figcaption>Training accuracy improves over time.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Step 3 — Predict</h2>
+    <p>Draw a doodle and see the model’s top guess and confidence.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="brand-inline"><span class="logo">🤖</span><strong>AI Kids Lab</strong></div>
+      <p>Fun, safe, step-by-step AI projects for ages 8–12.</p>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="/tutorials/">All Tutorials</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Stay Updated</h4>
+      <form class="newsletter" action="#" method="post" onsubmit="return false" aria-describedby="nl-help">
+        <label class="sr-only" for="nl-email">Email</label>
+        <input id="nl-email" type="email" placeholder="Your email (demo)" required />
+        <button type="submit">Subscribe</button>
+        <small id="nl-help">Demo form only. Replace with your provider.</small>
+      </form>
+    </div>
+  </div>
+  <p class="copyright">© <span id="year"></span> AI Kids Lab. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

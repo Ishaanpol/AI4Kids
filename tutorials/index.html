@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tutorials • AI Kids Lab</title>
+<meta name="description" content="All AI tutorials for kids 8–12, with step-by-step instructions, screenshots, and videos." />
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css" />
+<script defer src="/assets/js/main.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/"><span class="logo">🤖</span><span>AI Kids Lab</span></a>
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/">Home</a>
+    <a href="/tutorials/">Tutorials</a>
+    <a href="/skills/">AI Skills</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="section">
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <a href="/">Home</a> <span aria-hidden="true">›</span> <span>All Tutorials</span>
+  </nav>
+
+  <h1>All Tutorials</h1>
+  <p>Each guide includes kid-friendly steps, safety notes, and tips for helpers.</p>
+
+  <div class="cards">
+    <a class="card" href="/tutorials/teachable-machine-image-classifier.html"><span class="ribbon">New</span>
+      <img src="/assets/img/placeholder-16x9.svg" alt="Image classification preview" />
+      <div class="card-body">
+        <h3>Image Classifier with Teachable Machine</h3>
+        <p>Train your computer to tell apart different objects using your webcam.</p>
+        <span class="pill">Beginner</span>
+      </div>
+    </a>
+
+    <a class="card" href="/tutorials/scratch-chatbot.html">
+      <img src="/assets/img/placeholder-16x9.svg" alt="Scratch chatbot preview" />
+      <div class="card-body">
+        <h3>Build a Chatbot in Scratch</h3>
+        <p>Create a character that chats with you and answers simple questions.</p>
+        <span class="pill">Beginner</span>
+      </div>
+    </a>
+
+    <a class="card" href="/tutorials/python-doodle-recognizer.html">
+      <img src="/assets/img/placeholder-16x9.svg" alt="Doodle recognizer preview" />
+      <div class="card-body">
+        <h3>Doodle Recognizer in Python</h3>
+        <p>Draw a picture and let a tiny neural network guess it.</p>
+        <span class="pill pill-alt">Advanced</span>
+      </div>
+    </a>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="brand-inline"><span class="logo">🤖</span><strong>AI Kids Lab</strong></div>
+      <p>Fun, safe, step-by-step AI projects for ages 8–12.</p>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="/tutorials/">All Tutorials</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Stay Updated</h4>
+      <form class="newsletter" action="#" method="post" onsubmit="return false" aria-describedby="nl-help">
+        <label class="sr-only" for="nl-email">Email</label>
+        <input id="nl-email" type="email" placeholder="Your email (demo)" required />
+        <button type="submit">Subscribe</button>
+        <small id="nl-help">Demo form only. Replace with your provider.</small>
+      </form>
+    </div>
+  </div>
+  <p class="copyright">© <span id="year"></span> AI Kids Lab. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

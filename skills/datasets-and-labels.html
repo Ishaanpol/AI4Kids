@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Datasets & Labels • AI Kids Lab</title>
+<meta name="description" content="Well-labeled examples help models learn the right stuff." />
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css" />
+<script defer src="/assets/js/main.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/"><span class="logo">🤖</span><span>AI Kids Lab</span></a>
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/">Home</a>
+    <a href="/tutorials/">Tutorials</a>
+    <a href="/skills/">AI Skills</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="section tutorial">
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <a href="/">Home</a> <span aria-hidden="true">›</span>
+    <a href="/skills/">AI Skills</a> <span aria-hidden="true">›</span>
+    <span>Datasets & Labels</span>
+  </nav>
+  <h1>Datasets & Labels</h1>
+  <p class="lead">Well-labeled examples help models learn the right stuff.</p>
+
+  <section>
+  <h2>What’s a Dataset?</h2>
+  <ol class="steps detailed">
+    <li><strong>Examples:</strong> A folder of images, each named with what’s inside.</li>
+    <li><strong>Labels:</strong> The “answer” for each example (cat, dog, etc.).</li>
+    <li><strong>Balance:</strong> Try to have similar amounts of each label.</li>
+  </ol>
+  <aside class="callout info"><strong>Note:</strong> Messy labels confuse models. Neat labels = better learning.</aside>
+</section>
+
+
+  <section><h2>Mini Activity</h2><p>Take 10 photos of two objects (5 + 5). Make folders with clear names. That’s a tiny dataset!</p></section>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="brand-inline"><span class="logo">🤖</span><strong>AI Kids Lab</strong></div>
+      <p>Fun, safe, step-by-step AI projects for ages 8–12.</p>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="/tutorials/">All Tutorials</a></li>
+        <li><a href="/skills/">AI Skills</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Stay Updated</h4>
+      <form class="newsletter" action="#" method="post" onsubmit="return false" aria-describedby="nl-help">
+        <label class="sr-only" for="nl-email">Email</label>
+        <input id="nl-email" type="email" placeholder="Your email (demo)" required />
+        <button type="submit">Subscribe</button>
+        <small id="nl-help">Demo form only. Replace with your provider.</small>
+      </form>
+    </div>
+  </div>
+  <p class="copyright">© <span id="year"></span> AI Kids Lab. All rights reserved.</p>
+</footer>
+</body>
+</html>
